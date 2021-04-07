@@ -1,0 +1,646 @@
+body {
+  font-family: Montserrat, Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.nav-link {
+  border: 1px solid white;
+  color: white;
+  padding: 7px 12px 7px 12px;
+  background-color: transparent;
+  border-radius: 25px;
+  font-size: 13.5px;
+}
+
+.nav-link-popup {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 5px 10px 5px 10px;
+  border-radius: 25px;
+  font-size: 13px;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-link-popup:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-bar-button {
+  display: none;
+  position: absolute;
+  height: 55%;
+  width: 30px;
+  right: 15px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.nav-bar-popup {
+  height: 100%;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-s;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  top: 54px;
+  width: 90%;
+  height: 220px;
+  padding-left: 50px;
+  background-color: rgb(0, 0, 0, 0.8);
+  transform: translateY(-300px);
+  transition-duration: 0.4s;
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.3),
+    0 1px 4px rgba(255, 255, 255, 0.24);
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("https://github.com/thomas-guizzetti/image-CodePen-project/blob/main/photos3106.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin: 0px 20px 50px 20px;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-transform: none;
+  color: black;
+  margin: 10px;
+  padding: 5px 15px 5px 15px;
+}
+
+p1 {
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-transform: none;
+  color: white;
+}
+
+p2 {
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 20px;
+  text-transform: none;
+  color: black;
+}
+
+h2 {
+  text-align: left;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-transform: none;
+  color: black;
+  margin: 60px 10px 40px 10px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: underline;
+}
+
+#about-me {
+  padding: 50px;
+}
+
+/*Education section*/
+
+#education {
+  background-color: rgb(0, 0, 0, 0.85);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.education-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.date {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.award-name {
+  background-color: white;
+  color: black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.award-place {
+  padding: 0px 5px 0px 10px;
+}
+
+.award-grade {
+  padding: 0px 5px 0px 10px;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.award-description {
+  width: 100%;
+}
+
+/*End of Education section*/
+
+/*Experience*/
+#experience {
+  background-color: rgb(255, 255, 255, 0.85);
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.experience-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.role-name {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.role-place {
+  padding: 0px 5px 0px 10px;
+}
+
+.role-grade {
+  padding: 0px 5px 0px 10px;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.role-description {
+  width: 100%;
+}
+/*End of Experience section*/
+
+/*Achievements and Responsability roles*/
+
+#achievements-and-responsability-roles {
+  background-color: rgb(0, 0, 0, 0.85);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 100%;
+}
+
+.achievement-master-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.9vw;
+}
+
+.achievement-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 14.5px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: none;
+  color: white;
+  border: 3px solid white;
+  height: 100px;
+  padding: 2px;
+  line-height: 20px;
+}
+
+.achievement-ul {
+  visibility: visible;
+  flex-direction: column;
+  color: white;
+  list-style-type: square;
+  padding: 10px 5px 10px 25px;
+  border: 1px solid transparent;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.achievement-paragraph-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  justify-self: end;
+  align-self: center;
+  padding: 5px 0px 5px 0px;
+  height: 30%;
+}
+
+/* End of Achievement and Responsability roles */
+
+/*Interests and additional information*/
+
+#interests-additional-information {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px 20px 20px;
+  height: 100%;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: none;
+  color: white;
+  border: 1px solid white;
+}
+
+#additional-information {
+  width: 50%;
+  padding: 35px;
+}
+
+#interests {
+  width: 50%;
+  padding: 35px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: row;
+  line-height: 20px;
+}
+
+.info-list-left {
+  margin: 5px 5px 5px 0px;
+  width: 35%;
+}
+
+.info-list-right {
+  margin: 5px 5px 5px 0px;
+  width: 65%;
+}
+
+/*End of Interests and additional information*/
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-transform: none;
+  color: white;
+  margin: 60px 10px 40px 10px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: underline;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+}
+
+.project-link {
+  display: grid;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+label {
+  text-align: center;
+  border: 1px solid white;
+}
+
+h4 {
+  text-align: center;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 45px;
+  text-transform: none;
+  color: black;
+  margin: 60px 10px 40px 10px;
+  padding: 60px 15px 5px 15px;
+  text-decoration: underline;
+}
+
+#contact-me {
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+#contact-me > p {
+  text-align: center;
+}
+
+.contact-details {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-link {
+  padding: 5px 10px 5px 10px;
+  margin: 0px 10px 0px 10px;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.85);
+  transition-duration: 0.4s;
+}
+
+.contact-link:hover {
+  transform: translateY(-6px);
+  transition-duration: 0.3s;
+}
+
+.up-link > p {
+  text-decoration: underline;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  font-size: 12px;
+  height: 50px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.85);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .achievement-ul {
+    height: 100%;
+  }
+
+  .achievement-master-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievements {
+    width: 500px;
+  }
+
+  .date {
+    margin: 0px;
+  }
+
+  .education-title {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 20px;
+  }
+
+  .experience-title {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 20px;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .nav-bar-popup {
+    display: flex;
+  }
+
+  .nav-bar-button {
+    display: inline;
+  }
+
+  /*.award-name, .award-place, .role-name, .role-place, .date{
+    font-size: 14px;
+  }
+  
+  .role-grade, .award-grade{
+    font-size: 13px;
+  }
+  
+  p1, p2 {
+    font-size: 13px;
+  }
+  
+  h1{
+    font-size: 55px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+  }
+  
+  .contact-link{
+    font-size: 22px;
+  }
+  
+  .achievement-paragraph-description{
+    font-size: 13.5px;
+  }
+  
+  #interests-additional-information {
+    font-size: 11.5px;
+  }
+  
+  
+  */
+}
+
+@media (max-width: 860px) {
+  #interests-additional-information {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 40px 0px 40px;
+  }
+
+  #additional-information {
+    width: 88%;
+    padding: 35px;
+  }
+
+  #interests {
+    width: 88%;
+    padding: 35px;
+  }
+
+  .info-list {
+    line-height: 20px;
+  }
+
+  /*
+  .award-name, .award-place, .role-name, .role-place, .date{
+    font-size: 13px;
+  }
+  
+  .role-grade, .award-grade{
+    font-size: 12px;
+  }
+  
+  p1, p2 {
+    font-size: 12px;
+  }
+  
+  h1{
+    font-size: 53px;
+  }
+  
+  .nav-link {
+    font-size: 13px;
+  }
+  
+  .contact-link{
+    font-size: 21px;
+  }
+  
+  .achievement-paragraph-description{
+    font-size: 12.5px;
+  }
+  
+  #interests-additional-information {
+    font-size: 10.5px;
+  }
+  */
+}
+
+@media (max-width: 700px) {
+  /*
+  h1{
+    font-size: 50px;
+  }
+  
+  .nav-link {
+    font-size: 13px;
+  }
+  
+  .contact-link{
+    font-size: 20px;
+  }
+  */
+}
+
+@media (max-width: 500px) {
+  /*
+  h1{
+    font-size: 40px;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  .contact-link{
+    font-size: 13px;
+  }
+  
+  h4{
+    font-size: 35px;
+  }
+  */
+}
+
+@media (max-width: 400px) {
+  /*
+  h1{
+    font-size: 34px;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  .contact-link{
+    font-size: 13px;
+  }
+  
+  h4{
+    font-size: 35px;
+  }
+  */
+}
